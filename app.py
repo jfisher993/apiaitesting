@@ -70,21 +70,22 @@ def makeWebhookResult(data, req):
     # if condition is None:
     #     return {}
 
-    result = req.get("result")
-	parameters = result.get("parameters")
-    programming = parameters.get("programming")
+ #    result = req.get("result")
+	# parameters = result.get("parameters")
+ #    programming = parameters.get("programming")
 
-    if (programming == "python"):
-    	speech = "You snake"
-    else:
-    	speech = "I am not a fan of " + programming
+ #    if (programming == "python"):
+ #    	speech = "You snake"
+ #    else:
+ #    	speech = "I am not a fan of " + programming
+ 	speech = "test"
 
     return {
         "speech": speech,
         "displayText": speech,
         #"data": {"slack": slack_message},
-        "data": {"facebook": speech},
-        "source": "FisherTestApp"
+        #"data": {"facebook": speech},
+        "source": "testapp"
     }
 
 
