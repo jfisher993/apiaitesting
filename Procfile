@@ -1,1 +1,1 @@
-web: python apiaitest.py
+web: python app.py
